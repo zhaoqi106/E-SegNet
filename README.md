@@ -1,5 +1,5 @@
-# E-SegNet: Advanced E-Structured Networks for Accurate 2D and 3D Medical Image Segmentation
-This repository contains official implementation for the paper titled "**E-SegNet: Advanced E-Structured Networks for Accurate 2D and 3D Medical Image Segmentation**".
+# E-SegNet: E-shaped Structure Networks for Accurate 2D and 3D Medical Image Segmentation
+This repository contains official implementation for the paper titled "**E-SegNet: E-shaped Structure Networks for Accurate 2D and 3D Medical Image Segmentation**".
 In this work, we have built two models for 2D and 3D medical image segmentation, respectively. The 2D E-SegNet is validated on the Synapse (multi-organ segmentation), ACDC (cardiac segmentation), and Kvasir-Seg (polyp segmentation) datasets, while the 3D E-SegNet is validated on the Synapse (3D) and NIH Pancreas (pancreatic segmentation) datasets.
 ## Environment
 1. Create a new conda environment with python version 3.8.18:
