@@ -1,0 +1,7 @@
+MODEL:
+  PRETRAIN_MODEL: "mobilenetv4_hybrid_large.e600_r384_in1k"
+  Params:
+    img_size: 448
+
+  
+    

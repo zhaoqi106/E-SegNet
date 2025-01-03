@@ -1,0 +1,31 @@
+defaults:
+  - model: E_SegNet_2D
+  - optimizer: adamw
+  - scheduler: cosine
+  - _self_
+
+run_name: ${model.object.model_name}_${model.object.ch}
+
+trainer:
+  _target_: lightning.pytorch.Trainer
+#  accelerator: auto
+  accelerator: gpu
+  devices: [0]
+  max_epochs: 500
+  log_every_n_steps: 8
+  deterministic: warn
+
+criterion:
+  _target_: monai.losses.DiceCELoss
+  include_background: False
+  sigmoid: True
+
+ch: 32
+pretrained: True
+freeze_encoder: False
+deep_supervision: False
+model_name: mobilenetv4_hybrid_large.e600_r384_in1k
+img_size: 448
+batch_size: 8
+lr: 1e-4
+num_classes: 1
