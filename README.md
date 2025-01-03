@@ -10,10 +10,10 @@ In this work, we have built two models for 2D and 3D medical image segmentation,
 
 2. Install PyTorch and torchvision
    ```
-   We recommend an evironment with pytorch >=2.0.0+cu118, torchvision==0.15.1+cu118, torchaudio==2.0.1+cu118
+   We recommend an evironment with pytorch==2.0.0+cu118, torchvision==0.15.1+cu118, torchaudio==2.0.1+cu118
    ```
 
-3. Other packages can be found in the requirements.txt file, or you can directly install them using::
+3. Other packages can be found in the requirements.txt file, or you can directly install them using:
    ```
    pip install -r requirements.txt
    ```
@@ -24,7 +24,7 @@ In this work, we have built two models for 2D and 3D medical image segmentation,
 2. Change the directory to the 2D folder (assuming you are currently in the E-SegNet main directory):
     ```
    cd 2D/
-    ```
+   ```
 
 ### Training and Testing
 3. Run the code below to train or test 2D E-SegNet on the **Synapse** dataset.
@@ -44,7 +44,7 @@ In this work, we have built two models for 2D and 3D medical image segmentation,
 
 ## 3D Medical Image Segmentation
 ### Dataset Preparation
-1. Download the Synapse and ACDC dataset from the link [Synapse 3D dataset](https://github.com/Amshaker/unetr_plus_plus), [NIH Pancreas dataset](https://github.com/xmindflow/deformableLKA).
+1. Download the Synapse and Pancreas dataset from the link [Synapse 3D dataset](https://github.com/Amshaker/unetr_plus_plus), [NIH Pancreas dataset](https://github.com/xmindflow/deformableLKA).
 You should strictly follow the given steps.
 
 ### Pre-trained Weights Download
@@ -61,7 +61,7 @@ You should strictly follow the given steps.
    cd Synapse/training_scripts/
    bash run_training_synapse.sh
    ```
-   Inference: 
+   or Inference.
    ```
    cd ../evaluation_scripts/
    bash run_evaluation_synapse.sh
@@ -75,4 +75,4 @@ You should strictly follow the given steps.
    python test_pancreas.py --root_path [Your NIH Pancreas dataset path] --load_checkpoint [Path to the trained weights]
    ```
 
-This repository references[AgileFormer](https://github.com/sotiraslab/AgileFormer), [D-LKA Net](https://github.com/xmindflow/deformableLKA), [unetr_plus_plus](https://github.com/Amshaker/unetr_plus_plus?tab=readme-ov-file). Thanks to them
+This repository references [AgileFormer](https://github.com/sotiraslab/AgileFormer), [D-LKA Net](https://github.com/xmindflow/deformableLKA), [unetr_plus_plus](https://github.com/Amshaker/unetr_plus_plus?tab=readme-ov-file). Thanks to them.

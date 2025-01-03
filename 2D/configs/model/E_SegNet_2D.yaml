@@ -1,0 +1,6 @@
+name: E_SegNet_2D
+object:
+  _target_: model.E_SegNet_2D.E_SegNet_2D
+  ch: ${ch}
+  model_name: ${model_name}
+  

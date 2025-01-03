@@ -1,0 +1,7 @@
+MODEL:
+  PRETRAIN_MODEL: "mobilenetv4_conv_aa_large.e230_r448_in12k_ft_in1k"
+  Params:
+    img_size: 544
+
+  
+    
