@@ -16,7 +16,7 @@ class LAHeart(Dataset):
         print(train_flod)
         if split=='train':
             # with open(self._base_dir+'/Pancreas/Flods/'+train_flod, 'r') as f: #/LA/Flods/
-            with open("/data/sjwlab/wuw/project/seg/deformableLKA-main/3D/pancreas_code/dataset_pancreas"+'/Pancreas/Flods/'+train_flod, 'r') as f: #/LA/Flods/
+            with open("./dataset_pancreas"+'/Pancreas/Flods/'+train_flod, 'r') as f: #/LA/Flods/
                 self.image_list = f.readlines()
         self.image_list = [item.replace('\n','') for item in self.image_list]
 
