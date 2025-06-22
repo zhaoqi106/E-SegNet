@@ -1,5 +1,3 @@
-# E-SegNet: E-shaped Structure Networks for Accurate 2D and 3D Medical Image Segmentation
-This repository contains official implementation for the paper titled "**E-SegNet: E-shaped Structure Networks for Accurate 2D and 3D Medical Image Segmentation**".
 In this work, we have built two models for 2D and 3D medical image segmentation, respectively. The 2D E-SegNet is validated on the Synapse (multi-organ segmentation), ACDC (cardiac segmentation), and Kvasir-Seg (polyp segmentation) datasets, while the 3D E-SegNet is validated on the Synapse (3D) and NIH Pancreas (pancreatic segmentation) datasets.
 ## Environment
 1. Create a new conda environment with python version 3.8.18.
@@ -13,10 +11,7 @@ In this work, we have built two models for 2D and 3D medical image segmentation,
    We recommend an evironment with pytorch==2.0.0+cu118, torchvision==0.15.1+cu118, torchaudio==2.0.1+cu118
    ```
 
-3. Other packages can be found in the requirements.txt file, or you can directly install them using
-   ```
-   pip install -r requirements.txt
-   ```
+3. Other packages can be found in the requirements.txt file.
    
 ## 2D Medical Image Segmentation
 ### Dataset Preparation
@@ -55,7 +50,9 @@ You should strictly follow the given steps.
    ```
 
 ### Training and Testing on the **Synapse 3D** dataset
-4. Place the downloaded pre-trained weights into ./Synapse/unetr_pp/training/network_training/pre_checkpoint.
+4. Place the downloaded pre-trained weights into ./Synapse/unetr_pp/training/network_training/pre_checkpoint. Additionally, update the dataset path in Synapse/training_scripts/run_training_synapse.sh to match your local dataset location.
+
+
 5. Run the code below to train or test 3D E-SegNet on the **Synapse 3D** dataset.
    ```
    cd Synapse/training_scripts/
